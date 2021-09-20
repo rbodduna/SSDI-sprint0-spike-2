@@ -18,5 +18,6 @@ app.get('/',async(req,res)=>{
     })
 });
 app.listen(port,()=>{
+    //connection successul
     console.log("The server is running on port",port);
 });
