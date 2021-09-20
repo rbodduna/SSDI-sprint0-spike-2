@@ -6,6 +6,7 @@ const {MongoClient} = require("mongodb");
 const path='mongodb://localhost:27017/';
 const dbname="Sample";
 app.get('/',async(req,res)=>{
+    //initialzing connection to database
     MongoClient.connect(path,{useNewUrlParser:true})
     .then((client)=>{
         const connect=client.db(dbname);
